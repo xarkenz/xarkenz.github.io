@@ -1,0 +1,13 @@
+sc-large-banner {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: #444;
+}
+
+sc-large-banner h1 {
+    text-align: center;
+    font-size: large;
+    color: white;
+    font-family: 'Nunito', Arial, sans-serif;
+}
