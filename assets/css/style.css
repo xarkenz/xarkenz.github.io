@@ -21,27 +21,64 @@ body {
     gap: min(20px, 5vw);
     background-color: white;
     box-shadow: 0 -10px 10px 10px #0007;
+    overflow: auto hidden;
 }
 
-.sc-nav-container a {
+.sc-nav-button {
+    min-width: fit-content;
     height: 60px;
-    padding: 10px 20px;
+    padding: 6px 16px;
+    border: 4px solid transparent;
+    outline: none;
     box-sizing: border-box;
     line-height: 40px;
-    background-color: white;
-    background-image: linear-gradient(to top, #0003 0% 80%, #0000 100%);
+    background-color: #23a54c;
+    color: white;
+}
+
+.sc-nav-button:link, .sc-nav-button:visited {
+    background-color: transparent;
+    background-image: linear-gradient(#23a54c, #23a54c);
     background-repeat: no-repeat;
-    background-position-y: 66px;
-    background-size: 100% 120%;
-    transition: background-color 0.5s, background-position-y 0.5s;
+    background-origin: border-box;
+    background-position-y: 60px;
+    color: #111;
+    transition: border-color 0.25s, background-color 0.25s, background-position-y 0.25s, color 0.25s;
 }
 
-.sc-nav-container a:hover {
-    background-position-y: -20%;
+.sc-nav-button:link:hover, .sc-nav-button:visited:hover {
+    background-position-y: 54px;
+    color: #333;
 }
 
-.sc-nav-container a:active {
-    background-color: #ddd;
+.sc-nav-button:link:active, .sc-nav-button:visited:active {
+    background-color: #0002;
+    color: #23a54c;
+    transition-duration: 0s;
+}
+
+.sc-nav-button:link:focus, .sc-nav-button:visited:focus {
+    border-color: #23a54c;
+}
+
+.sc-nav-emblem {
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    padding: 0;
+    outline: 2px solid transparent;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #0002;
+    background-repeat: no-repeat;
+    transition: outline-color 0.25s;
+}
+
+.sc-nav-emblem:focus {
+    outline-color: #23a54c;
 }
 
 .sc-body-container {
@@ -82,6 +119,7 @@ body {
     position: relative;
     width: 100%;
     margin: 0;
+    padding: 20px max(10%, 40px);
     box-sizing: border-box;
     text-align: center;
     color: white;
@@ -99,4 +137,47 @@ body {
 
 .sc-large-banner h3 {
     font-size: 1.5em;
+}
+
+.sc-content-block {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    padding: 40px max(10%, 40px);
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: white;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: justify;
+    overflow: auto;
+}
+
+.sc-content-block p:first-of-type {
+    margin-top: 0;
+}
+
+.sc-content-block p:last-of-type {
+    margin-bottom: 0;
+}
+
+.sc-content-block > div > img {
+    width: 100%;
+}
+
+.sc-horiz-line {
+    width: 100%;
+    height: 4px;
+    min-height: 4px;
+    max-height: 4px;
+    margin: 30px 0;
+    background-color: #23a54c;
 }
