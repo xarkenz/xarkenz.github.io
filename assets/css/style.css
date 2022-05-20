@@ -161,14 +161,16 @@ body {
 }
 
 .sc-content-block h2 {
-    font-size: 2.5em;
+    margin: 0;
     color: #23a54c;
+    font-size: 3em;
     font-family: 'Cousine', monospace;
 }
 
 .sc-content-block h3 {
-    font-size: 1.5em;
+    margin: 0;
     color: #23a54c;
+    font-size: 1.5em;
     font-family: 'Cousine', monospace;
 }
 
@@ -199,6 +201,10 @@ body {
 
 .sc-content-block > div > img {
     width: 100%;
+}
+
+.sc-drop-shadow {
+    box-shadow: 0 5px 10px #0005;
 }
 
 .sc-horiz-line {
