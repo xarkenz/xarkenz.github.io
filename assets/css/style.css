@@ -48,7 +48,7 @@ body {
 
 .sc-nav-button:link:hover, .sc-nav-button:visited:hover {
     background-position-y: 54px;
-    color: #333;
+    color: #555;
 }
 
 .sc-nav-button:link:active, .sc-nav-button:visited:active {
@@ -157,7 +157,6 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    text-align: justify;
     overflow: auto;
 }
 
@@ -167,12 +166,29 @@ body {
     font-family: 'Cousine', monospace;
 }
 
+.sc-content-block p {
+    text-align: justify;
+}
+
 .sc-content-block p:first-of-type {
     margin-top: 0;
 }
 
 .sc-content-block p:last-of-type {
     margin-bottom: 0;
+}
+
+.sc-content-block p b {
+    color: #23a54c;
+}
+
+.sc-content-block a:link, .sc-content-block a:visited {
+    color: #23a54c;
+    transition: color 0.25s;
+}
+
+.sc-content-block a:link:hover, .sc-content-block a:visited:hover {
+    color: #39d12a;
 }
 
 .sc-content-block > div > img {
