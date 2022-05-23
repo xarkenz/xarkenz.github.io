@@ -199,6 +199,15 @@ body {
     color: #39d12a;
 }
 
+.sc-content-block a.sc-uncolored:link, .sc-content-block a.sc-uncolored:visited {
+    color: #111;
+    transition: color 0.25s;
+}
+
+.sc-content-block a.sc-uncolored:link:hover, .sc-content-block a.sc-uncolored:visited:hover {
+    color: #555;
+}
+
 .sc-content-block > div > img {
     width: 100%;
 }
